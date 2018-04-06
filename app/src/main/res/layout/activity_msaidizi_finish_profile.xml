@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buttercell.msaidizi.msaidizi.MsaidiziFinishProfile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Alpha Beta"
+            android:layout_marginTop="13dp"
+            android:textSize="30sp"
+            android:id="@+id/txtUserName"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/txtUserImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtUserName"
+            android:layout_centerHorizontal="true"
+            android:elevation="15dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+
+        <TextView
+            android:id="@+id/lbl_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUserImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Bio"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/txt_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_bio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:inputType="textMultiLine"
+            android:maxLength="80"
+            android:hint="Tell us more about yourself"
+            android:padding="20dp"
+            android:textColor="#717171" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_bio"
+            android:text="Finish"
+            android:id="@+id/btnFinish"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

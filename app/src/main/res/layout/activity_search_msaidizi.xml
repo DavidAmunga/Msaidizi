@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context="com.buttercell.msaidizi.client.SearchMsaidizi">
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/colorWhite"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_container"
+        android:id="@+id/msaidizi_list"
+        />
+
+    <com.gigamole.library.PulseView
+        android:id="@+id/pv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:pv_alpha="70"
+        android:layout_below="@id/toolbar_container"
+        app:pv_color="@color/colorPrimary"
+        app:pv_count="8"
+        app:pv_icon="@mipmap/ic_launcher_round"
+        app:pv_icon_height="100dp"
+        android:visibility="gone"
+        app:pv_icon_width="100dp"
+        app:pv_interpolator="@android:anim/linear_interpolator"
+        app:pv_measure="height"
+        app:pv_spawn_period="700" />
+
+</RelativeLayout>

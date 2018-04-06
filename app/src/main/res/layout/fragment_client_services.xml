@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.buttercell.msaidizi.client.ClientServices">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/services_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="4dp"
+        android:id="@+id/fabRequest"
+        android:layout_gravity="bottom|end"
+        app:fabSize="normal"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_assignment_white"
+        />
+
+
+
+</FrameLayout>

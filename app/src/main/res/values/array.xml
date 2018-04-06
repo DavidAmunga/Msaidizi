@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_category">
+        <item>Plumber</item>
+        <item>Mechanic</item>
+        <item>Electrician</item>
+        <item>House help</item>
+        <item>Carpenter</item>
+        <item>Handy man</item>
+
+    </string-array>
+
+</resources>
